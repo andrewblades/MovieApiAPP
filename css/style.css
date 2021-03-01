@@ -1,90 +1,158 @@
-/* body{
-    background-color: #161616;
-} */
-
-
-.form-group{
-    margin-bottom: 1rem;
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-#inputValue{
-    width: 300px;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    outline: none;
-    color: #395057;
-    background-color: #fff;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
+body {
+  background-color: #292929;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#search{
-    color:#fff;
-    background-color: #232b2e;
-    outline: none;
-    min-height: 38px;
-    font-weight: 400;
-    text-align: center;
-    cursor: pointer;
-    padding: .375rem .30rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
+  background-color: #0f0f0f;
+  color: whitesmoke;
 }
 
-/* .searchbox{
-    width: 500%;
-    height: 30vh;
-    
-    background-color: #ced4da;
-    padding: 50px 5% 0px 5%;
-} */
-#movies-searchable{
-    margin-top: 20px;
-    margin-bottom: 50px;
+.navbar-brand {
+  color: lightgray;
+  font-size: 3rem;
+  text-decoration: none;
 }
 
-section{
-    display:flex;
-    width: 100%;
-    overflow-x:auto;
+.form-group {
+  margin-bottom: 1rem;
 }
 
-section img{
-    width: 300px;
-    transition: 250ms all
+#inputValue {
+  width: 300px;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  outline: none;
+  color: #395057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
 }
 
-img:hover{
-    margin-left: 0 40px;
-    transform: scale(1.2);
-    cursor: pointer;
+#search {
+  color: #fff;
+  background-color: #232b2e;
+  outline: none;
+  min-height: 38px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  padding: .375rem .30rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
 }
 
-.content{
-    border : 1px solid rgb(211, 211, 211);
-    padding: 20px;
-    display: none;
+.searchbox {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.searchbox h1, .searchbox form, .searchbox button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchbox h1 {
+  color: lightgray;
+}
+
+#movies-searchable {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: #292929;
+}
+
+section img {
+  background-color: #0f0f0f;
+  padding-top: 5px;
+  margin-top: 3%;
+  width: 300px;
+  height: 400px;
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
+  padding: 0vh 1vh;
+}
+
+img:hover {
+  margin-left: 0 40px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+.content {
+  border: 1px solid lightgray;
+  padding: 20px;
+  display: none;
 }
 
 #content-close {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.conent div{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 10px;
+.conent div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
 }
 
-.content-display{
-    display: block;
+.content-display {
+  display: block;
 }
 
-#movies-container{
-    margin-bottom: 50px;
+#movies-container {
+  margin-bottom: 50px;
 }
+
+h2 {
+  color: lightgray;
+}
+/*# sourceMappingURL=style.css.map */
